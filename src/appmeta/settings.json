@@ -1,0 +1,40 @@
+{
+  "format_version": 1,
+  "version": 1,
+  "fields": {
+    "work_minutes": {
+      "type": "integer",
+      "label": "Work (min)",
+      "default": 25,
+      "min": 1,
+      "max": 120,
+      "step": 1
+    },
+    "break_minutes": {
+      "type": "integer",
+      "label": "Break (min)",
+      "default": 5,
+      "min": 1,
+      "max": 60,
+      "step": 1
+    },
+    "rounds": {
+      "type": "integer",
+      "label": "Rounds",
+      "default": 4,
+      "min": 1,
+      "max": 12,
+      "step": 1
+    },
+    "auto_next": {
+      "type": "boolean",
+      "label": "Auto next",
+      "default": false
+    },
+    "sound": {
+      "type": "boolean",
+      "label": "Sound",
+      "default": true
+    }
+  }
+}
