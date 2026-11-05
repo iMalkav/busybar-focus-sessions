@@ -1,0 +1,58 @@
+{
+  "captured_at": "2026-11-05T13:52:37.686234+00:00",
+  "application": {
+    "format_version": 1,
+    "id": "app.imalkav.focus_sessions",
+    "name": "Focus Sessions",
+    "version": "0.1.0",
+    "api_version": "27.14.0",
+    "author": "iMalkav",
+    "description": "Work and break intervals with pause and session progress.",
+    "heap_size_kib": 256,
+    "debug": false
+  },
+  "firmware": {
+    "version": "r1051",
+    "target": 21,
+    "branch": "dev",
+    "build_date": "2026-10-30",
+    "commit_hash": "6ee64ba1",
+    "intercom_version": "6ee64ba1",
+    "nwp_version": "1611.2.1.1.255.11.71",
+    "matter_version": "1.0"
+  },
+  "api_version": "27.15.0",
+  "method": "GET /api/screen?display=0 and display=1; base64 decoded and saved as PNG without resizing or retouching",
+  "settings": {
+    "version": 1,
+    "values": {
+      "work_minutes": 25,
+      "break_minutes": 5,
+      "rounds": 4,
+      "auto_next": false,
+      "sound": false
+    }
+  },
+  "inputs": [
+    "ok"
+  ],
+  "data_note": "Schema default settings.",
+  "fixture": null,
+  "frames": [
+    {
+      "path": "screenshots/front.png",
+      "width": 72,
+      "height": 16,
+      "frame_sha256": "47737f80560a1011e9249eec435be2a1dada4c0887b79d54ae0c0540ac8014fa",
+      "png_sha256": "67f9e79f28fa16edd187dc70c0c62a754b1d15af7fde3181d9ea93e20050ea24"
+    },
+    {
+      "path": "screenshots/back.png",
+      "width": 160,
+      "height": 80,
+      "frame_sha256": "887b6a12ea09f06c85eaaed05822f44a479a0a8cbdac35e8d5fa7c121dbd6cc2",
+      "png_sha256": "7d4487966a6eddeb6c1c783be1ba5226375d086b24fc14c077692dae30fbb79c"
+    }
+  ],
+  "verification": "Installed, launched, captured both displays, then quit via the device API. This is not comprehensive physical-device testing or verification on the latest release firmware."
+}
